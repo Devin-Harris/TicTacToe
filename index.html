@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+
+    <link rel="stylesheet" href="./css/styles/main.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    
+    <div class="title">
+        <h1>TIC-TAC-TOE</h1>
+        <button id="Rules">View Rules...</button>
+
+        <div id="RulesText">
+            <h2>Rules</h2>
+            <button id="CloseRules">X</button>
+        
+            <p>The game is played on a grid that's 3 squares by 3 squares.
+            <br><br>
+            You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+            <br><br>
+            The first player to get 3 of his/her marks in a row (up, down, across, or diagonally) is the winner.
+            <br><br>
+            When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+            <br><br>
+            Click a box to place an X in that Square... Have fun!!!</p>
+        </div>
+    </div>
+
+    <button id="Reset">Reset Game</button>
+    <h1 id="GameResult"></h1>
+
+    <div id="boardWrapper">
+        <div id="UserWins">
+            <h2>User Wins: </h2>
+            <p id="userScore"></p>
+        </div>
+        <div id="board">
+
+        </div>
+        <div id="CompWins">
+            <h2>Computer Wins: </h2>
+            <p id="compScore"></p>
+        </div>
+    </div>
+
+</body>
+</html>
